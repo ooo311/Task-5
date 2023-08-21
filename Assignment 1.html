@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessment 3</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Your JavaScript code here
+      const catButton = document.getElementById("catButton");
+      const dogButton = document.getElementById("dogButton");
+      const frogButton = document.getElementById("frogButton");
+      const textField = document.getElementById("textField");
+      const messageElement = document.getElementById("message");
+      const imageElement = document.getElementById("image");
+
+      catButton.addEventListener("click", () => {
+        resetButtons();
+        catButton.classList.add("active-button");
+        textField.value = "User clicks Cat";
+        messageElement.textContent = "Cat is clicked";
+        imageElement.src = "cat_image.jpeg"; 
+      });
+
+  dogButton.addEventListener("click", () => {
+    resetButtons();
+    dogButton.classList.add("active-button");
+    textField.value = "User clicks Dog";
+    messageElement.textContent = "Dog is clicked";
+    imageElement.src = "dog_image.jpeg"; 
+  });
+
+  frogButton.addEventListener("click", () => {
+    resetButtons();
+    frogButton.classList.add("active-button");
+    textField.value = "User clicks Frog";
+    messageElement.textContent = "Frog is clicked";
+    imageElement.src = "frog_image.jpeg"; 
+  });
+
+  function resetButtons() {
+        catButton.classList.remove("active-button");
+        dogButton.classList.remove("active-button");
+        frogButton.classList.remove("active-button");
+      }
+    });
+</script>
+<style>
+  body {
+    font-family: monospace; 
+    text-align: center;
+  }
+  .info-container {
+    width: 280px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightcyan;
+    border: 7px double #F082DE;
+  }
+  h2, h3, h4 {
+    color: #F082DE;
+    font-size: 1.0em;
+  }
+  /* Additional styles for the table */
+  table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px dashed black;
+  }
+  th {
+    background-color: #F082DE;
+    color: white;
+  }
+  tr:nth-child(odd) {
+    background-color: whitesmoke;
+  }
+  tr:nth-child(even) {
+    background-color: lightcyan;
+  }
+  td {
+    color: #F082DE;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+    .active-button {
+      background-color: plum ; /* Highlight color for active button */
+    }
+</style>
+</head>
+<body>
+<h1> Task 1</h1>
+<div class="info-container">
+  <h2>Student Number: 79 393 95, Tobi Osunkoya </h2>
+  <h3>COMP804: WEB SECURITY</h3>
+  <h4>AsSIGNMENT 1, due on 21 August 2023, 11 PM </h4>
+</div>
+<h1>Task 2</h1>
+<div class="tabs-panel is-active" id="tab-186573" role="tabpanel" aria-labelledby="tab-186573-label">
+  <span id="d.en.186573"></span>
+  <div class="grid-x grid-padding-x">
+    <div class="cell large-auto">
+      <table>
+        <thead>
+          <tr>
+            <th class="c10389">Activity</th>
+            <th class="c10390">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First day to enrol for re-enrolling (continuing students)</td>
+            <td>21 Nov 2022</td>
+          </tr>
+          <tr>
+            <td>First day to enrol for new students (commencing students)</td>
+            <td>05 Dec 2022</td>
+          </tr>
+          <tr>
+            <td>Orientation</td>
+            <td>
+              <p>20 Feb - 23 Feb 2023</p>
+              <p>Further information is available on <a href="https://www.uow.edu.au/student/get-started/orientation">Get Started</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Lectures Commence (weeks 1-6)</td>
+            <td>27 Feb - 07 Apr 2023</td>
+          </tr>
+          <tr>
+            <td>Last day to enrol / add subjects yourself</td>
+            <td>10 Mar 2023</td>
+          </tr>
+          <tr>
+            <td>Last day to enrol / add subjects with Head of Students approval</td>
+            <td>17 Mar 2023</td>
+          </tr>
+          <tr>
+            <td>
+              <p><strong>CENSUS DATE</strong></p>
+              <ul>
+                <li>Fees due</li>
+                <li>Last day to withdraw from subject/s without paying for them</li>
+                <li>HECS / FEE HELP debt reporting date</li>
+                <li>Last day to change HECS / FEE HELP billing option</li>
+              </ul>
+              <p><a href="https://uowedu.service-now.com/kb?id=kb_article_view&amp;sysparm_article=KB0012659">Learn more about Census date &gt;</a></p>
+            </td>
+            <td>
+              <div>31 Mar 2023</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>Student Services and Amenities Fees Due</div>
+            </td>
+            <td>01 Apr 2023</td>
+          </tr>
+          <tr>
+            <td>Last day to withdraw without academic penalty - subject deleted from record
+              <p>Fail grade recorded if subject withdrawn after this date</p>
+            </td>
+            <td>05 May 2023</td>
+          </tr>
+          <tr>
+            <td>Mid-Session Recess (1 week)</td>
+            <td>10 Apr - 14 Apr 2023</td>
+          </tr>
+          <tr>
+            <td>Lectures Recommence (weeks 7-13)</td>
+            <td>17 Apr - 02 Jun 2023</td>
+          </tr>
+          <tr>
+            <td>Study Recess (1 week)</td>
+            <td>05 Jun - 09 Jun 2023</td>
+          </tr>
+          <tr>
+            <td>Exams (2 weeks)</td>
+            <td>10 Jun - 22 Jun 2023</td>
+          </tr>
+          <tr>
+            <td>Mid-Year Recess (4 weeks)</td>
+            <td>26 Jun - 21 Jul 2023</td>
+          </tr>
+          <tr>
+            <td>Release of Results</td>
+            <td>06 Jul 2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<h1>Task 3</h1>
+<h1>Web Attacks Information</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Web Attacks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <br>XSS (Cross-Site Scripting)<br>
+        <img src="XSS (Cross-Site Scripting).jpeg"> 
+        <br>Source: www.cloudflare.com <br>
+      </td>
+      <td>
+        Cross-Site Scripting (XSS) is a web vulnerability where attackers inject malicious scripts into web pages viewed by users. These scripts execute in the context of a user's browser, potentially stealing sensitive information or performing actions on their behalf. XSS attacks exploit inadequate input validation, posing a threat to both users and websites. Implementing input validation and output encoding in web applications is crucial to prevent this type of attack.
+        <br>
+        <a href="https://www.cloudflare.com/en-au/learning/security/threats/cross-site-scripting/">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>SQL Injection<br>
+        <img src="SQL Injection.jpeg"> 
+        <br>Source: www.geeksforgeeks.org <br>
+      </td>
+      <td>
+        Cross-Site Scripting (XSS) is a web vulnerability where attackers inject malicious scripts into web pages viewed by users. These scripts execute in the context of a user's browser, potentially stealing sensitive information or performing actions on their behalf. XSS attacks exploit inadequate input validation, posing a threat to both users and websites. Implementing input validation and output encoding in web applications is crucial to prevent this type of attack.
+        <br>
+        <a href="https://www.google.com.au/url?sa=i&url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fsql-injection&psig=AOvVaw31ucpWCSEkbcWWixEznD_O&ust=1692600671626000&source=images&cd=vfe&opi=89978449&ved=0CA0QjRxqFwoTCMC274TT6oADFQAAAAAdAAAAABAK">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>Phishing Attacks <br>
+        <img src="Phishing Attacks.jpeg"> 
+        <br>Source: www.open.edu <br>
+      </td>
+      <td>
+        Phishing attacks involve cybercriminals sending deceptive emails or messages that appear to be from trustworthy sources. These messages often contain links to malicious websites or attachments that, when interacted with, can lead to the theft of sensitive information like passwords, credit card numbers, or personal data. Phishing attacks capitalize on users' trust in recognizable brands or institutions to manipulate them into divulging confidential information. By training users to identify phishing attempts and verifying the authenticity of requests, organizations can mitigate the risks associated with these attacks. 
+        <a href="https://www.open.edu/openlearn/mod/oucontent/view.php?id=80038&section=_unit4.3.4">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br> DDoS (Distributed Denial of Service)<br>
+        <img src="DDoS (Distributed Denial of Service).jpeg">
+        <br>Source: www.cloudflare.com <br>
+      </td>
+      <td>
+        Distributed Denial of Service attacks overwhelm a target server, network, or website by flooding it with an excessive amount of traffic from multiple sources. This flood of traffic exhausts the target's resources, rendering it inaccessible to legitimate users. Cybercriminals often deploy botnets, networks of compromised devices, to execute DDoS attacks. Defending against DDoS attacks requires deploying advanced security measures, such as traffic filtering, rate limiting, and utilizing content delivery networks (CDNs) to absorb and mitigate the impact of incoming traffic.
+        <br>
+        <a href="https://www.cloudflare.com/en-au/learning/ddos/what-is-a-ddos-attack/">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>CSRF (Cross-Site Request Forgery)<br>
+        <img src="CSRF (Cross-Site Request Forgery).jpeg"> 
+        <br>Source: www.postwigger.net <br>
+      </td>
+      <td>
+        Cross-Site Request Forgery attacks exploit users who are authenticated on a website to perform unintended actions without their knowledge. Cybercriminals craft malicious requests that trick the user's browser into performing actions, such as changing account settings or making unauthorized transactions. To defend against CSRF attacks, web applications can implement anti-CSRF tokens and ensure that requests made by users are accompanied by verification mechanisms to ensure authenticity.
+        <br>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fcsrf&psig=AOvVaw02SSgiVB2cqIBZq-0NIXHZ&ust=1692601313432000&source=images&cd=vfe&opi=89978449&ved=0CA8QjhxqFwoTCMCOirLV6oADFQAAAAAdAAAAABAH">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>Ransomware Attacks <br>
+        <img src="Ransomware Attacks.jpeg"> 
+        <br>Source: www.globalsign.com <br>
+      </td>
+      <td>
+        Ransomware attacks encrypt a victim's files, rendering them inaccessible until a ransom payment is made to the attackers. These attacks can devastate individuals and organizations, causing data loss and operational disruption. Cybercriminals often demand payment in cryptocurrencies to make tracing difficult. To defend against ransomware attacks, regular data backups, strong security measures, and employee training to recognize suspicious emails or links are essential.
+        <a href="https://www.cyber.gov.au/threats/types-threats/ransomware">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>Man-in-the-Middle (MitM) <br>
+        <img src="Man-in-the-Middle (MitM).jpeg"> 
+        <br>Source: www.pandasecurity.com <br>
+      </td>
+      <td>
+        Man-in-the-Middle attacks occur when an attacker intercepts and potentially alters communication between two parties without their knowledge. This can lead to the theft of sensitive data or the injection of malicious content. Attackers can exploit vulnerabilities in public Wi-Fi networks or compromise DNS servers to redirect traffic through their own systems. Protecting against MitM attacks requires strong encryption methods, such as HTTPS, and user education to avoid unsecured networks and verify digital certificates.
+        <br>
+        <a href="https://www.pandasecurity.com/en/mediacenter/security/man-in-the-middle-attack/">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>Drive-By Downloads<br>
+        <img src="Drive-By Downloads.jpeg"> 
+        <br> Source: www.exabeam.com <br>
+      </td>
+      <td>
+        Drive-by download attacks take advantage of vulnerabilities in a user's browser or plugins to automatically download and install malicious software without their consent. These attacks can occur when a user visits a compromised or malicious website. Cybercriminals exploit outdated software or browser plugins to deliver malware that can lead to data breaches or system compromise. Preventing drive-by downloads requires keeping software up to date, using modern browsers with strong security features, and employing web filtering solutions to block access to known malicious websites.
+        <br>
+        <a href="https://www.exabeam.com/information-security/drive-by-download/">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>Pharming Attacks<br>
+        <img src="Pharming Attacks.jpeg">
+        <br> Source: www.aura.com <br>
+      </td>
+      <td>
+        Pharming attacks manipulate the Domain Name System (DNS) to redirect users from legitimate websites to malicious ones, often without their knowledge. Attackers can achieve this by poisoning the DNS cache or modifying a user's hosts file. Victims are unknowingly directed to fraudulent websites that may attempt to steal personal information or distribute malware. To defend against pharming attacks, organizations should implement secure DNS practices, regularly monitor DNS traffic for anomalies, and educate users about the importance of verifying website addresses.
+        <br>
+        <a href="https://www.aura.com/learn/pharming-attack#:~:text=A%20pharming%20attack%20is%20a,%2C%20credit%20card%20numbers%2C%20etc.">Learn more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>Zero-Day Exploits<br>
+        <img src="Zero-Day Exploits.jpeg"> 
+        <br> Source: www.imperva.com <br>
+      </td>
+      <td>
+        Zero-day exploits target vulnerabilities in software that are unknown to the software vendor or developer, providing attackers with the advantage of launching attacks before a patch is available. Cybercriminals can use these vulnerabilities to infiltrate systems, steal sensitive data, or spread malware. Defending against zero-day exploits requires rapid detection and response, regular software updates, intrusion prevention systems, and user training to recognize and report potential security threats.
+        <a href="https://www.imperva.com/learn/application-security/zero-day-exploit/">Learn more</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h1> Task 4</h1>
+  <div>
+    <button id="catButton">Cat</button>
+    <button id="dogButton">Dog</button>
+    <button id="frogButton">Frog</button>
+  </div>
+  <div>
+    <input type="text" id="textField" readonly>
+  </div>
+  <div>
+    <p id="message"></p>
+  </div>
+  <div>
+    <img id="image" src="" alt="Image">
+    <br> Images Sourced from: Dog: dogsofaustralia.com.au; frog: www.twinkl.com.au and Cat: nationalgeographic.com <br>
+  </div>
+</body>
+</html>
